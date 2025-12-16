@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+         function Wazon(_kolor, _wielkość, _producent) {
+            this.producent = _producent;
+            this.kolor = _kolor;
+            this.wielkość = _wielkość;
+            this.Wazon_wyswietl_piet =function() {
+                document.write(`Wielkość wazonu ${this.wielkość}, wyprodukowany przez ${this.producent} ,ma kolor ${this.kolor}`);
+            }
+        }
+
+        let wazon1 = new Wazon("Beżowy", "metr","wazoniarze" );
+        wazon1.Wazon_wyswietl_piet()
+        
+
+        wazon1.ocena =4.8;
+wazon1.wazon_pokaz_piet = function() {
+    document.write(`<br>Wazon jest oceniany na  ${this.ocena} gwiazdek/gwiazdki`);
+}
+wazon1.wazon_pokaz_piet()
+    </script>
+</body>
+</html>

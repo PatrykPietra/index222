@@ -1,0 +1,23 @@
+<!DOCTYPE html>   
+<head>    
+<title>Sprawdzenie danych Twoje nazwisko </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:red;font-size:50px;"> 
+<script language="JavaScript"> 
+do { 
+var liczba1=prompt("a="," "); 
+var a_pie=parseFloat(liczba1); 
+var liczba2=prompt("b="," "); 
+var b_pie=parseFloat(liczba2); 
+var liczba3=prompt("c="," "); 
+var c_pie=parseFloat(liczba3); 
+} 
+while 
+(!((a_pie<b_pie+c_pie)&&(b_pie<a_pie+c_pie)&&(c_pie<a_pie+b_pie)&&(a_pie>0)&&(b_pie>0)&&(c_pie>0)));
+document.write("Boki: " +a_pie+" "+b_pie+" "+c_pie+"<br>");  
+</script> 
+</div> 
+</body> 
+</html> 
