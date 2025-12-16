@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 57</title>
+    <script language="JavaScript">
+        var numer_w_dzienniku_gal = 5;
+        var licznik_pie = 0;
+        
+        for(var i_pie = numer_w_dzienniku_pie; i_pie <= numer_w_dzienniku_pie + 15; i_pie++) {
+            var pierw_2_gal = Math.sqrt(i_pie).toFixed(2);
+            var pierw_4_pie = Math.sqrt(Math.sqrt(i_pie)).toFixed(2);
+            
+            document.write("I=" + i_pie + " pierw_2(" + i_pie + ")=" + pierw_2_pie + " pierw_4(" + i_pie + ")=" + pierw_4_pie + "<br>");
+            
+            licznik_pie++;
+            if(licznik_pie == 3) {
+                document.write("<br>");
+                licznik_pie = 0;
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
