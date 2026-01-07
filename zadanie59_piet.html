@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 59</title>
+    <script language="JavaScript">
+        var R_pie = parseFloat(prompt("Podaj promień R:"));
+        
+        var R_calkowite_gal = Math.floor(R_pie);
+        var N_pie = 0;
+        
+        var x_min_pie = Math.floor(-R_pie - 1);
+        var x_max_pie = Math.floor(R_pie + 1);
+        var y_min_pie = Math.floor(-R_pie - 1);
+        var y_max_pie = Math.floor(R_pie + 1);
+        
+        for(var i_pie = x_min_pie; i_pie <= x_max_pie; i_pie++) {
+            for(var j_pie = y_min_pie; j_pie <= y_max_pie; j_pie++) {
+                var odleglosc_pie = Math.sqrt(i_pie * i_pie + j_pie * j_pie);
+                if(odleglosc_pie <= R_pie) {
+                    N_pie++;
+                }
+            }
+        }
+        
+        document.write("Promień koła R = " + R_pie.toFixed(2) + "<br>");
+        document.write("Liczba punktów kratowych N(R) = " + N_pie);
+    </script>
+</head>
+<body>
+</body>
+</html>
